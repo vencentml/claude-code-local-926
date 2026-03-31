@@ -46,3 +46,20 @@ restored-src/src/
 - 源码版权归 [Anthropic](https://www.anthropic.com) 所有
 - 本仓库仅用于技术研究与学习，请勿用于商业用途
 - 如有侵权，请联系删除
+
+## Run with Kimi locally
+
+This repo includes a local bridge for running the published Claude Code CLI
+against Kimi without changing `package/cli.js`.
+
+Quick start:
+
+```powershell
+copy .env.kimi.example .env.kimi
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\start-claude-with-kimi.ps1
+```
+
+More details:
+- `KIMI-SETUP.md`
+- `scripts/kimi-anthropic-proxy.mjs`
+- `scripts/start-claude-with-kimi.ps1`
